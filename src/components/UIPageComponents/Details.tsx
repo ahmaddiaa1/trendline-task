@@ -32,13 +32,13 @@ function Details() {
           <div className='flex gap-2'>
             <Image
               src='/icons/bag-add.svg'
-              className='border border-[#4040401A] rounded-md p-1'
+              className='border border-[#4040401A] rounded-md p-1 cursor-pointer hover:scale-105 transition-all duration-300'
               alt=''
               width={42}
               height={42}
             />
             <Image
-              className='border border-[#4040401A] rounded-md p-1'
+              className='border border-[#4040401A] rounded-md p-1 cursor-pointer hover:scale-105 transition-all duration-300'
               src='/icons/love.svg'
               alt=''
               width={42}
@@ -91,7 +91,7 @@ function Details() {
           <div className='flex gap-2'>
             {ColorOptions.map((i) => (
               <div
-                className='rounded-full flex items-center justify-center w-16 h-16 p-2 bg-[#F4F7F9]'
+                className='rounded-full flex items-center justify-center w-16 h-16 p-2 bg-[#F4F7F9] cursor-pointer hover:scale-105 transition-all duration-300'
                 key={i}>
                 <div
                   className={`w-8 h-8 rounded-full`}
@@ -120,7 +120,9 @@ function Details() {
               <p className='font-medium text-2xl'>$300.00</p>
             </div>
 
-            <Button className='bg-[#BE968E] w-full xl:w-60 py-6 text-base font-medium'>
+            <Button
+              variant={"ghost"}
+              className='bg-[#BE968E] w-full xl:w-60 py-6 text-base font-medium cursor-pointer text-white'>
               Add To Cart
             </Button>
           </div>

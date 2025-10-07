@@ -77,8 +77,8 @@ function Slider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className='left-4 bg-black/50 hover:bg-black/70 text-white border-0' />
-        <CarouselNext className='right-4 bg-black/50 hover:bg-black/70 text-white border-0' />
+        <CarouselPrevious className='left-4 bg-black/50 hover:bg-black/70 text-white border-0 cursor-pointer' />
+        <CarouselNext className='right-4 bg-black/50 hover:bg-black/70 text-white border-0 cursor-pointer' />
       </Carousel>
 
       <Carousel

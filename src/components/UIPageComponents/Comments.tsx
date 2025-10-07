@@ -11,7 +11,9 @@ function Comments() {
       <Comment />
       <Separator />
       <Comment />
-      <Button className='bg-[#F5F5F5] p-8 rounded-xl font-semibold text-sm text-[#BE968E] font-Poppins '>
+      <Button
+        variant={"ghost"}
+        className='bg-[#F5F5F5] p-8 rounded-xl font-semibold text-sm text-[#BE968E] font-Poppins cursor-pointer'>
         View More Comments
       </Button>
     </div>

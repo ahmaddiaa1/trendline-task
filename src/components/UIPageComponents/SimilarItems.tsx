@@ -1,9 +1,6 @@
-"use client";
-import { useEffect, useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -19,8 +16,6 @@ function SimilarItems() {
     "/media/T-shirt05.jpeg",
   ];
 
-  const [current, setCurrent] = useState(0);
-
   return (
     <div>
       <Carousel
@@ -34,28 +29,24 @@ function SimilarItems() {
               key={i}
               className=' basis-1/2 md:basis-1/3 lg:basis-1/4 '>
               <Card
-                className={`relative rounded-3xl aspect-square w-auto overflow-hidden cursor-pointer transition-all duration-200 ${
-                  i + 1 === current
-                    ? "ring-1 ring-primary ring-offset-1"
-                    : "hover:opacity-80"
-                }`}>
+                className={`relative rounded-3xl aspect-square w-auto overflow-hidden cursor-pointer transition-all duration-200 `}>
                 {i === 1 && (
                   <p className='absolute z-10 top-4 left-4 border border-[#4040401A] rounded-md px-3 py-2 bg-white font-semibold text-[10px] text-[#BE968E] font-Poppins'>
                     25% OFF
                   </p>
                 )}
 
-                <div className='absolute z-10 top-4 right-4'>
+                <div className='absolute z-20 top-4 right-4'>
                   <div className='flex gap-2'>
                     <Image
                       src={`/icons/${i === 2 ? "bag-remove" : "bag-add"}.svg`}
-                      className='border border-[#4040401A] rounded-md p-1 bg-white'
+                      className='border border-[#4040401A] rounded-md p-1 bg-white cursor-pointer hover:scale-105 transition-all duration-300'
                       alt=''
                       width={32}
                       height={32}
                     />
                     <Image
-                      className='border border-[#4040401A] rounded-md p-1 bg-white'
+                      className='border border-[#4040401A] rounded-md p-1 bg-white cursor-pointer hover:scale-105 transition-all duration-300'
                       src={`/icons/${i === 2 ? "green-love" : "love"}.svg`}
                       alt=''
                       width={32}
@@ -68,7 +59,7 @@ function SimilarItems() {
                     src={image}
                     alt={`Thumbnail ${i + 1}`}
                     fill
-                    className='object-cover'
+                    className='object-cover hover:scale-110 transition-all duration-300'
                   />
                 </CardContent>
               </Card>
@@ -117,8 +108,8 @@ function SimilarItems() {
           ))}
         </CarouselContent>
         <div className='absolute bottom-0 left-1/2'>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className='cursor-pointer' />
+          <CarouselNext className='cursor-pointer' />
         </div>
       </Carousel>
     </div>

@@ -1,4 +1,4 @@
-import { MessageCircleMore, Star } from "lucide-react";
+import { MessageCircleMore } from "lucide-react";
 import { Progress } from "../ui/progress";
 import { Button } from "../ui/button";
 import Image from "next/image";
@@ -55,7 +55,7 @@ function RatingAndReviews() {
           </div>
           <Button
             variant={"ghost"}
-            className='bg-[#BE968E] text-white font-medium text-base py-6'>
+            className='bg-[#BE968E] text-white font-medium text-base py-6 cursor-pointer'>
             Add Comment
             <MessageCircleMore
               width={10}
@@ -64,7 +64,6 @@ function RatingAndReviews() {
           </Button>
         </div>
       </div>
-      <div className='comment-sections'></div>
     </div>
   );
 }

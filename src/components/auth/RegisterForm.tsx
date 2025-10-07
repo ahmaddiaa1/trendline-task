@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import { Link } from "lucide-react";
 
 export function RegisterForm() {
   const { register } = useAuth();
@@ -113,6 +114,7 @@ export function RegisterForm() {
         className='w-full'>
         {loading ? "Creating..." : "Register"}
       </Button>
+      <Link href={"/login"}>register</Link>
     </form>
   );
 }
