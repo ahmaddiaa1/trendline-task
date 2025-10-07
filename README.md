@@ -31,6 +31,7 @@ Open http://localhost:3000
 - /verify → submit code to `/auth/verify-email` (test code: 123456). Resend: `/auth/verify-email/resend-code`.
 - /login → submit to `/auth/login`. On success, token saved and redirect to /dashboard.
 - /dashboard → shows “Welcome, [User Name]”.
+- /ui → UI For Product Details page
 
 Token is stored in localStorage and mirrored to a cookie `auth_token` for middleware-based protection.
 
