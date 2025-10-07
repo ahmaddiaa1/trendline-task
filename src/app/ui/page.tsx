@@ -20,7 +20,7 @@ function page() {
         {
           id: "Slider",
           span: 1,
-          media: [{ breakpoint: "lg", widthCondition: "exactmin", span: 3 }],
+          media: [{ breakpoint: "lg", widthCondition: "max", span: 3 }],
         },
         {
           id: "Details",
