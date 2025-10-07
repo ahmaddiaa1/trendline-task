@@ -50,6 +50,7 @@ export default function UIHeader() {
         <nav className='flex justify-between items-center'>
           <div className='flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10'>
             <Image
+              className='cursor-pointer'
               src='/icons/tinytales.svg'
               alt='logo'
               width={48}
@@ -59,7 +60,7 @@ export default function UIHeader() {
               {Navigation.map((item) => (
                 <Link
                   href={item.href}
-                  className=' flex gap-1 items-center hover:pb-2 md:hover:pb-3 lg:hover:pb-4 transition-all duration-300 hover:scale-105 hover:text-black'
+                  className=' flex gap-1 items-center hover:pb-2 transition-all duration-300 hover:scale-105 hover:text-black'
                   key={item.name}>
                   <div className='relative w-5 h-5'>
                     <Image
