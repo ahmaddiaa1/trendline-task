@@ -6,14 +6,14 @@ This project implements Register, Login, Verify, and Dashboard using the provide
 
 - Next.js (App Router, TypeScript)
 - Tailwind CSS (v4)
-- shadcn/ui (button, input, label, form, sonner)
+- shadcn/ui
 
 ## Environment
 
 Create a `.env.local` file:
 
 ```
-NEXT_PUBLIC_API_BASE_URL=https://tinytales.trendline.marketing/api
+NEXT_PUBLIC_API_BASE_URL=your_api_base_URL
 ```
 
 ## Scripts
@@ -46,19 +46,11 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
