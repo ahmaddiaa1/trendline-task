@@ -1,3 +1,43 @@
+# Trendline Auth (Next.js + Tailwind + shadcn/ui)
+
+This project implements Register, Login, Verify, and Dashboard using the provided API.
+
+## Tech
+
+- Next.js (App Router, TypeScript)
+- Tailwind CSS (v4)
+- shadcn/ui (button, input, label, form, sonner)
+
+## Environment
+
+Create a `.env.local` file:
+
+```
+NEXT_PUBLIC_API_BASE_URL=https://tinytales.trendline.marketing/api
+```
+
+## Scripts
+
+```
+npm install
+npm run dev
+```
+
+Open http://localhost:3000
+
+## Flow
+
+- /register → submit form-data to `/auth/register`. On success, token saved and redirected to /verify.
+- /verify → submit code to `/auth/verify-email` (test code: 123456). Resend: `/auth/verify-email/resend-code`.
+- /login → submit to `/auth/login`. On success, token saved and redirect to /dashboard.
+- /dashboard → shows “Welcome, [User Name]”.
+
+Token is stored in localStorage and mirrored to a cookie `auth_token` for middleware-based protection.
+
+## Deploy
+
+Deploy on Vercel. Add env var `NEXT_PUBLIC_API_BASE_URL`.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
