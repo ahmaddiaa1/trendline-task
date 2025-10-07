@@ -71,3 +71,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Demo 
 Open [https://trendline-seven.vercel.app/](https://trendline-seven.vercel.app/) with your browser to see the Demo result
 
+```bash
+Verify Code : 123456
+```
+
