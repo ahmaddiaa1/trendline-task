@@ -50,7 +50,7 @@ export default function UIHeader() {
         <nav className='flex justify-between items-center'>
           <div className='flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10'>
             <Image
-              src='/icons/group.svg'
+              src='/icons/tinytales.svg'
               alt='logo'
               width={48}
               height={38}
